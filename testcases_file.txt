@@ -1,0 +1,502 @@
+Optimized:
+Enter no. of cars
+10
+Enter the arrival,departure and charge of every car
+4 6 8
+7 9 3
+9 11 9
+12 15 6 
+16 17 4
+18 20 3
+11 1 4
+12 13 4
+22 23 6
+21 23 7
+Enter the ending time of morning, afternoon and evening respectively
+12 17 23
+Enter the rate of charging during morning, afternoon and evening respectively
+10 9 8
+In the most optimal solution, which maximizes no. of cars charged in least time, the following cars will be able to get fully charged
+Car: 0
+Car: 1
+Car: 2
+Car: 3
+Car: 4
+Car: 5
+Car: 7
+Car: 8
+Car: 9
+
+The optimal solution is: {Car no. , Time when car is placed }
+0 5
+1 8
+2 10
+7 13
+3 14
+4 17
+5 19
+9 22
+8 23
+
+
+FcFS:
+Enter no of vehicles
+10
+Enter arrival, departure, charge needed for each EV
+4 6 8
+7 9 3
+9 11 9
+12 15 6 
+16 17 4
+18 20 3
+11 1 4
+12 13 4
+22 23 6
+21 23 7
+
+Enter ending time of three interval
+12 17 23
+Enter rate of three time interval
+10 9 8
+arrival and end time for EV 0 
+4 5
+arrival and end time for EV 1
+7 8
+arrival and end time for EV 2
+9 10
+arrival and end time for EV 6
+11 -1
+arrival and end time for EV 3
+12 13
+arrival and end time for EV 7
+12 -1
+arrival and end time for EV 4
+16 17
+arrival and end time for EV 5
+18 19
+arrival and end time for EV 9
+21 22
+arrival and end time for EV 8
+22 23
+
+SJS:
+Enter no of vehicles
+10 
+Enter arrival, departure, charge needed for every EV
+4 6 8
+7 9 3
+9 11 9
+12 15 6 
+16 17 4
+18 20 3
+11 1 4
+12 13 4
+22 23 6
+21 23 7
+Enter ending time of three interval
+12 17 23
+Enter rate of three time interval
+10 9 8
+arrival and end time for EV 6 
+11 -1
+arrival and end time for EV 7
+12 13
+arrival and end time for EV 4
+16 17
+arrival and end time for EV 8
+22 23
+arrival and end time for EV 0
+4 -1
+arrival and end time for EV 1
+7 8
+arrival and end time for EV 2
+9 10
+arrival and end time for EV 5
+18 19
+arrival and end time for EV 9
+21 22
+arrival and end time for EV 3
+12 -1
+
+
+Priority based according to deadline:
+Enter no of vehicles
+10
+Enter arrival, departure, charge needed for every EV
+4 6 8
+7 9 3
+9 11 9
+12 15 6 
+16 17 4
+18 20 3
+11 1 4
+12 13 4
+22 23 6
+21 23 7
+Enter ending time of three interval
+12 17 23
+Enter rate of three time interval
+10 9 8
+arrival and end time for EV 6 
+11 -1
+arrival and end time for EV 0
+4 5
+arrival and end time for EV 1
+7 8
+arrival and end time for EV 2
+9 10
+arrival and end time for EV 7
+12 13
+arrival and end time for EV 3
+12 14
+arrival and end time for EV 4
+16 17
+arrival and end time for EV 5
+18 19
+arrival and end time for EV 9
+21 22
+arrival and end time for EV 8
+22 23
+
+
+In this testcase it is observed that min charging ending time when all cars will be charged is 23 and which is same for also first come first serve, shortest job first, priority based according to deadline
+But for optimized algo and priority based only one car will not be charged before the departure time of that car, and in first come first serve 2 cars will not be charged , and in shortest job first 3 cars
+So, for this testcase optimized and priority based is the solution:
+
+
+Testcase 2:
+Enter no. of cars
+3
+Enter the arrival,departure and charge of every car
+9 12 10
+8 11 10
+7 10 30
+Enter the ending time of morning, afternoon and evening respectively
+12 17 23
+Enter the rate of charging during morning, afternoon and evening respectively
+10 6 5
+In the most optimal solution, which maximizes no. of cars charged in least time, the following cars will be able to get fully charged
+Car: 0
+Car: 1
+Car: 2
+
+The optimal solution is: {Car no, Time when car is placed}
+2 10
+1 11
+0 12
+
+Observed: 
+For this testcase solution is same for all the algorithm.
+
+
+Testcase 2:
+Optimized:
+Enter no. of cars
+12
+Enter the arrival,departure and charge of every car
+
+8 9 10
+9 10 11
+10 12 4
+12 13 3
+14 16 2
+12 16 8
+16 17 3
+17 19 7
+17 20 2
+17 21 4
+20 22 5
+21 22 6
+Enter the ending time of morning, afternoon and evening respectively
+12 17 23
+Enter the rate of charging during morning, afternoon and evening respectively
+6 5 4
+In the most optimal solution, which maximizes no. of cars charged in least time, the following cars will be able to get fully charged
+Car: 2
+Car: 3
+Car: 4
+Car: 5
+Car: 6
+Car: 7
+Car: 8
+Car: 9
+
+The optimal solution is: {Car no. , Time when car is placed }
+2 11
+3 13
+5 15
+4 16
+6 17
+7 19
+8 20
+9 21
+
+
+
+FCFS
+Enter no of vehicles
+12
+Enter arrival, departure, charge needed for each EV
+8 9 10
+9 10 11
+10 12 4
+12 13 3
+14 16 2
+12 16 8
+16 17 3
+17 19 7
+17 20 2
+17 21 4
+20 22 5
+21 22 6
+Enter ending time of three interval
+12 17 23
+Enter rate of three time interval
+6 5 4
+arrival and end time for EV 0 
+8 -1
+arrival and end time for EV 1
+9 -1
+arrival and end time for EV 2
+10 11
+arrival and end time for EV 3
+12 13
+arrival and end time for EV 5
+12 15
+arrival and end time for EV 4
+14 16
+arrival and end time for EV 6
+16 17
+arrival and end time for EV 7
+17 19
+arrival and end time for EV 8
+17 20
+arrival and end time for EV 9
+17 21
+arrival and end time for EV 10
+20 -1
+arrival and end time for EV 11
+21 -1
+
+Shortest job first
+Enter no of vehicles
+12
+Enter arrival, departure, charge needed for every EV
+
+8 9 10
+9 10 11
+10 12 4
+12 13 3
+14 16 2
+12 16 8
+16 17 3
+17 19 7
+17 20 2
+17 21 4
+20 22 5
+21 22 6
+Enter ending time of three interval
+12 17 23
+Enter rate of three time interval
+6 5 4
+arrival and end time for EV 0 
+8 -1
+arrival and end time for EV 1
+9 -1
+arrival and end time for EV 3
+12 13
+arrival and end time for EV 6
+16 17
+arrival and end time for EV 11
+21 -1
+arrival and end time for EV 2
+10 11
+arrival and end time for EV 4
+14 15
+arrival and end time for EV 7
+17 19
+arrival and end time for EV 10
+20 22
+arrival and end time for EV 8
+17 -1
+arrival and end time for EV 5
+12 14
+arrival and end time for EV 9
+17 18
+
+Priority based
+
+Enter no of vehicles
+12
+Enter arrival, departure, charge needed for every EV
+8 9 10
+9 10 11
+10 12 4
+12 13 3
+14 16 2
+12 16 8
+16 17 3
+17 19 7
+17 20 2
+17 21 4
+20 22 5
+21 22 6
+Enter ending time of three interval
+12 17 23
+Enter rate of three time interval
+6 5 4
+arrival and end time for EV 0 
+8 -1
+arrival and end time for EV 1
+9 -1
+arrival and end time for EV 2
+10 11
+arrival and end time for EV 3
+12 13
+arrival and end time for EV 5
+12 15
+arrival and end time for EV 4
+14 16
+arrival and end time for EV 6
+16 17
+arrival and end time for EV 7
+17 19
+arrival and end time for EV 8
+17 20
+arrival and end time for EV 9
+17 21
+arrival and end time for EV 10
+20 -1
+arrival and end time for EV 11
+21 -1
+
+	
+Observation:
+For the optimized and priority based answer is same in whch 4 cars requirement can not be fulfilled and minimum time is 21: and in first come first serve min time will be same but 5 cars requirement will not be fulfilled.in shortest job min time is 22 and 6 cars required not fulfilld
+
+So finally from the three testcase conclusion is that shortest job is not good approach for solving real fife problem
+
+Priority based according to deadline and fcfs is good approach is tends to optimization.
+
+Testcase 4:
+Optimized:
+Enter no of vehicle: 7
+Enter the arrival, departure and charge of every car
+9 13 20
+9 12 30
+14 17 40
+15 18 20
+19 20 10
+20 22 10
+21 23 5
+Enter the ending time of morning, afternoon and evening respectively
+12 17 23
+Enter the rate of charging during morning, afternoon and evening respectively
+20 10 5
+In the most optimal solution, which maximizes no. of cars charged in least time, the following cars will be able to get fully charged
+Car: 0
+Car: 1
+Car: 3
+Car: 5
+Car: 6
+
+The optimal solution is: {Car no. , Time when car is placed }
+1 11
+0 12
+3 17
+5 22
+6 23
+
+
+
+FCFS
+Enter no of vehicles
+7
+Enter arrival, departure, charge needed for each EV
+9 13 20
+9 12 30
+14 17 40
+15 18 20
+19 20 10
+20 22 10
+21 23 5
+Enter ending time of three interval
+12 17 23
+Enter rate of three time interval
+20 10 5
+arrival and end time for EV 0 
+9 10
+arrival and end time for EV 1 
+9 12
+arrival and end time for EV 2 
+14 -1
+arrival and end time for EV 3
+15 17
+arrival and end time for EV 4
+19 -1
+arrival and end time for EV 5
+20 22
+arrival and end time for EV 6
+21 23
+
+Shortest job first:
+Enter no of vehicles
+7
+Enter arrival, departure, charge needed for every EV
+9 13 20
+9 12 30
+14 17 40
+15 18 20
+19 20 10
+20 22 10
+21 23 5
+Enter ending time of three interval
+12 17 23
+Enter rate of three time interval
+20 10 5
+arrival and end time for EV 4 
+19 -1
+arrival and end time for EV 5 
+20 22
+arrival and end time for EV 6 
+21 23
+arrival and end time for EV 1
+9 -1
+arrival and end time for EV 2
+14 -1
+arrival and end time for EV 3
+15 17
+arrival and end time for EV 0
+9 -1	
+
+Priority Based:
+Enter no of vehicles
+7
+Enter arrival, departure, charge needed for every EV
+9 13 20
+9 12 30
+14 17 40
+15 18 20
+19 20 10
+20 22 10
+21 23 5
+Enter ending time of three interval
+12 17 23
+Enter rate of three time interval
+20 10 5
+arrival and end time for EV 1 
+9 11
+arrival and end time for EV 0 
+9 12
+arrival and end time for EV 2 
+14 -1
+arrival and end time for EV 3
+15 17
+arrival and end time for EV 4
+19 -1
+arrival and end time for EV 5
+20 22
+arrival and end time for EV 6
+21 23
+
+Observation: from this test case also fcfs and priority based solution is same as optimized but for shortest job first no of vehicle not fulfill requirement is more in this case.
