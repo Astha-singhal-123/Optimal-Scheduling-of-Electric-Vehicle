@@ -1,11 +1,11 @@
 # Optimal-Scheduling-of-Electric-Vehicle
-## INTRODUCTION
+## Introduction
 In this Project Scheduling of Electric Vehicle is done through various algorithm . the main motive to fulfill user’s and charging Station requirement to minimize the waiting time for user and overall time in which all EVS get charged, and more no. of EVS will get charged. First Come First Serve , Shortest Job first , Priority Based according to Deadline if deadline same then according to FCFS  and optimized algorithm (consist of all solutions) is used to schedule the EVS.
 ## Constraint for the Problem
 There will be n number of vehicles whose information like  arrival time , departure time and charge needed will taken as input and there will be three interval for charging of EVS and charging rate may be different for each interval also taken as input.
 ## 📲 To run this project
 - There is 4 algorithm Optimized, FCFS , Shortest Job Firs, Priority based according to dedaline and FCFS.
-- to run this code  you nedd an IDE which have C++ installed
+- to run this code  you need an IDE which have C++ installed
 ## Conclusion
 After applying different types of algorithm for the scheduling of EVS for different testcases  it is observed that shortest job first is not as efficient as priority based deadline if deadline same then according to first come and first serve. optimized solution will work for all testcases but due to large time complexity it will work only for small n thus for larger n priority based according to deadline and FCFS will be the solution for the problem. here in this project main motive is to test different algorithm and minimize the total ending time and maximize to fulfill the user’s requirement.
 ## 💥 How to Contribute?
